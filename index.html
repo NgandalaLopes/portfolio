@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-     <!-- In the line bellow, added two more tags, name and content to allow responsive design  --> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portolio</title><!-- Changed to a more descriptive title -->
+    <title>Portolio</title> 
 </head>
 
-<body>
-    <!-- In the line bellow, repacled the div for a semantic tag Header, keeping the class "header"  --> 
+<body> 
     <header class="header"> 
-            <nav> <!-- Repacled the div for a semantic tag nav, to better defines the set of navigation links  --> 
+            <nav> 
                 <ul>
                     <li>
-                        <a href="">About Me</a>
+                        <a href="#about">About Me</a>
                     </li>
                     <li>
-                        <a href="">Work</a>
+                        <a href="#work">Work</a>
                     </li>
                     <li>
-                        <a href="">Resume</a>
+                        <a href="#resume">Resume</a>
                     </li>
                 </ul>
             </nav> 
-            <div>
-                <img src="./assets/images/logo.png" alt="logo" width="100px"> 
+            <button><a href="#contact">Contact Me</a>  </button> 
+            <div class="logo">
+                <a href="index.html">
+                <img src="./assets/images/logo.png" alt="logo" width="100px">  </a>
             </div>
     </header>
-    <div class="hero">
+    <div class="hero" id="#about">
         <div class="boxLeft"> 
             <div class="myName"> 
                  <h2>My name is <span>Ngandala</span></h2>
                  <p>I am a professional full stack developer with more than 2 years of experience</p>
                  <div>Hire Me</div>
             </div>
-
             <div class="boxOrangeLight"> html </div>
             <div class="boxOrangeClassic"> css </div>
             <div class="boxDark"> react </div>
-            <div class="boxGrey"> javascript </div> 
+            <div class="boxDark"> javascript </div> 
         </div>
 
+        <div class="boxRight"> 
+            <img src="./assets/images/hero.png">
+        </div>
         <div class="boxDark_Experience">
             <h3>2+</h3>
             <p>years of experience</p>
         </div> 
-        <div class="boxRight">
-            <img src="./assets/images/hero.png">
-            <div class="boxGreyTop"><a href="">Contact Me</a>  </div> 
-
-        </div>
         
     </div>
     <!-- In the line bellow, repacled the div for a semantic tag main, keeping the class "content"  --> 
   
-  <div class="maine">
+  <div class="maine" id="work">
     <div class="maineLeft">
         <h3>Latest Projects</h3>
     </div>
@@ -91,10 +89,14 @@
     </div>
   </div>
     <!-- In the following bellow line, repacled the div for a semantic tag footer, keeping the class "footer"  -->
-    <footer class="footer">
-        <h2>Portolio of Ngandala Lopes</h2>
+    <footer class="footer" id="contact">
+        <h2>Get in Touch</h2>
+        <ul>
+            <li>e : hello@miggsweb.com</li>
+            <li>t : 713 416 1894</li>
+        </ul>
         <p>
-            &copy; 2022 Houston, Texas.
+            &copy; 2022 Houston, Texas. 
         </p>
     </footer>
 </body>
